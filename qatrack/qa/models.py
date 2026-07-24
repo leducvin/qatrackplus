@@ -772,7 +772,7 @@ class Tolerance(models.Model):
                 errors.append(_("Value set for tolerance or action but type is Multiple Choice"))
 
             if self.mc_pass_choices is None or self.mc_pass_choices.strip() == "":
-                errors.append(_("You must give at least l passing choice for a multiple choice tolerance"))
+                errors.append(_("You must give at least 1 passing choice for a multiple choice tolerance"))
             else:
 
                 pass_choices = [x.strip() for x in self.mc_pass_choices.split(",") if x.strip()]
@@ -1209,7 +1209,7 @@ class Test(models.Model, TestPackMixin):
                 errors.append(_("Wrap low required for Wraparound test"))
 
             if wrap_high_def and wrap_low_def and self.wrap_high < self.wrap_low:
-                errors.append(_("Wrap High must be less than Wrap Low"))
+                errors.append(_("Wrap Low must be less than Wrap High"))
 
         if errors:
             raise ValidationError({"wrap_high": errors})

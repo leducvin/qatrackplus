@@ -1036,7 +1036,7 @@ class TestForm(forms.ModelForm):
                     )
                     links.append((url, name))
 
-                title = _(_("Click to edit the reference and tolerance l(opens in new window)"))
+                title = _("Click to edit the reference and tolerance (opens in new window)")
                 html_links = format_html_join(
                     ", ", '<a href="{}" title="{}" target="_blank">{}</a>', ((u, title, l) for (u, l) in links)
                 )

@@ -300,7 +300,7 @@
                         {% endif %}
 
                         <li>
-                          <a href="{% url "overview_due_dates_user" %}" title="{% trans "View QC for groups you belong to (QC for groups you belong to)" %}">
+                          <a href="{% url "overview_due_dates_user" %}" title="{% trans "View QC for groups you belong to" %}">
                             <i class="fa fa-calendar-check-o fa-lg fa-fw" aria-hidden="true"></i>
                             {% trans "By Due Status" %}{% if perms.qa.can_review_non_visible_tli %} - {% trans "Your Groups" %}{% endif %}
                           </a>
@@ -541,7 +541,7 @@
                         <li class="nav-header">{% trans "Return To Service QC" %}</li>
                         {% if perms.service_log.view_returntoserviceqa %}
                           <li class="hover-parent">
-                            <a href="{% url "rtsqa_list_all" %}" title="{% trans "View all return to service qa" %}">
+                            <a href="{% url "rtsqa_list_all" %}" title="{% trans "View all return to service QC" %}">
                               <i class="fa fa-stack fa-lg fa-fw">
                                 <i class="fa fa-pencil-square-o fa-stack-custom-main"></i>
                                 <i class="fa fa-share fa-rotate-180 fa-stack-custom-sub lower-extra-left hover-sub-info"></i>
@@ -553,7 +553,7 @@
 
                         {% if perms.service_log.perform_returntoserviceqa %}
                           <li class="hover-parent">
-                            <a href="{% url 'rtsqa_list_incomplete' %}" title="{% trans "View all incomplete return to service qa" %}">
+                            <a href="{% url 'rtsqa_list_incomplete' %}" title="{% trans "View all incomplete return to service QC" %}">
                               <i class="fa fa-stack fa-lg fa-fw">
                                 <i class="fa fa-pencil-square-o fa-stack-custom-main"></i>
                                 <i class="fa fa-share fa-rotate-180 fa-stack-custom-sub lower-extra-left hover-sub-info"></i>
