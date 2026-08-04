@@ -928,7 +928,7 @@ class ServiceEventsBaseList(BaseListableView):
         return 'fa-wrench'
 
     def get_page_title(self, f=None):
-        return 'All Service Events'
+        return _('All Service Events')
 
     def get_fields(self, request=None):
 
@@ -1011,7 +1011,7 @@ class ServiceEventsByStatusList(ServiceEventsBaseList):
 
     def get_page_title(self, *args, **kwargs):
         status = get_object_or_404(sl_models.ServiceEventStatus, pk=self.kwargs['pk'])
-        return "Service Events - Status: %s" % status.name
+        return _("Service Events - Status: %s") % status.name
 
     def get_next(self):
         return reverse('sl_list_by_status', kwargs={'pk': self.kwargs['pk']})
@@ -1022,7 +1022,7 @@ class ServiceEventsReviewRequiredList(ServiceEventsBaseList):
     service_status__is_review_required set to True"""
 
     def get_page_title(self, *args):
-        return "Service Events Requiring Review"
+        return _("Service Events Requiring Review")
 
     def get_queryset(self):
         qs = super().get_queryset().filter(is_review_required=True, service_status__is_review_required=True)
@@ -1040,7 +1040,7 @@ class ServiceEventsInitiatedByList(ServiceEventsBaseList):
         title = "%s %s - %s " % (
             tli.unit_test_collection.unit, tli.unit_test_collection.name, format_datetime(tli.work_completed)
         )
-        return "Service Events Initiated By %s" % (title)
+        return _("Service Events Initiated By %s") % (title)
 
     def get_queryset(self):
         tli = get_object_or_404(qa_models.TestListInstance, pk=self.kwargs['tli_pk'])
@@ -1059,7 +1059,7 @@ class ServiceEventsReturnToServiceForList(ServiceEventsBaseList):
         title = "%s %s - %s " % (
             tli.unit_test_collection.unit, tli.unit_test_collection.name, format_datetime(tli.work_completed)
         )
-        return "Service Events with %s as Return To Service" % (title)
+        return _("Service Events with %s as Return To Service") % (title)
 
     def get_queryset(self):
         qs = super().get_queryset()
@@ -1074,7 +1074,7 @@ class ServiceEventsByUnitList(ServiceEventsBaseList):
 
     def get_page_title(self, *args):
         unit = get_object_or_404(u_models.Unit, number=self.kwargs['unit_number'])
-        return "Service Events For %s" % unit
+        return _("Service Events For %s") % unit
 
     def get_queryset(self):
         qs = super().get_queryset()
@@ -1405,7 +1405,7 @@ class ServiceEventDownTimesList(ServiceEventsBaseList):
         return self.fields
 
     def get_page_title(self, f=None):
-        return 'Filter Service Events and Up Time Summary'
+        return _l('Filter Service Events and Up Time Summary')
 
     def duration_lost_time(self, se):
         duration = se.duration_lost_time

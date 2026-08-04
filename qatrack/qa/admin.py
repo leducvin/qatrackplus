@@ -65,6 +65,7 @@ class UnitTestInfoForm(forms.ModelForm):
     reference_set = forms.CharField(label=_("Date"), required=False)
     test_type = forms.CharField(required=False)
     comment = forms.CharField(
+        label=_l("Comment"),
         widget=forms.Textarea,
         required=False,
         help_text=_("Include an optional comment about why this reference/tolerance is being updated")
@@ -232,6 +233,7 @@ class SetMultipleReferencesAndTolerancesForm(forms.Form):
     )
     reference = forms.FloatField(required=False)
     comment = forms.CharField(
+        label=_l("Comment"),
         widget=forms.Textarea,
         required=False,
         help_text=_("Include an optional comment about why these references/tolerances are being updated")
