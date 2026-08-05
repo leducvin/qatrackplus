@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QATrack+ v4.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-05 09:39-0400\n"
-"PO-Revision-Date: 2026-08-05 09:39-0400\n"
+"POT-Creation-Date: 2026-08-05 15:28-0400\n"
+"PO-Revision-Date: 2026-08-05 15:31-0400\n"
 "Last-Translator: Vincent Leduc (Santé Québec Est-de-l'Île-de-Montréal - "
 "Universitaire) vleduc.hmr@ssss.gouv.qc.ca\n"
 "Language-Team: \n"
@@ -28,6 +28,7 @@ msgstr "Statut d'administration"
 #: qatrack/accounts/admin.py:30 qatrack/qa/models.py:670
 #: qatrack/qa/models.py:2284
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:114
+#: qatrack/qa/templates/qa/testlistinstance_review.html:125
 #: qatrack/qa/templates/qa/unittestcollection_backup.html:62
 #: qatrack/qa/views/forms.py:22 qatrack/reports/filters.py:215
 #: qatrack/reports/filters.py:274 qatrack/reports/filters.py:301
@@ -41,6 +42,7 @@ msgstr "Oui"
 #: qatrack/accounts/admin.py:31 qatrack/qa/models.py:670
 #: qatrack/qa/models.py:2284
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:116
+#: qatrack/qa/templates/qa/testlistinstance_review.html:127
 #: qatrack/qa/templates/qa/unittestcollection_backup.html:61
 #: qatrack/qa/views/forms.py:22 qatrack/reports/filters.py:216
 #: qatrack/reports/filters.py:274 qatrack/reports/filters.py:301
@@ -262,8 +264,8 @@ msgstr "La connexion a échoué avec l'erreur {status_code} : {phrase}"
 #: qatrack/qa/models.py:1086 qatrack/qa/models.py:1396
 #: qatrack/qa/models.py:1500
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:280
-#: qatrack/qa/templates/qa/testlistinstance_review.html:268
-#: qatrack/qa/templates/qa/testlistinstance_review.html:462
+#: qatrack/qa/templates/qa/testlistinstance_review.html:274
+#: qatrack/qa/templates/qa/testlistinstance_review.html:468
 #: qatrack/qa/templates/qa/unittestcollection_backup.html:47
 #: qatrack/reports/filters.py:386 qatrack/reports/qc/assigned_qc.py:267
 #: qatrack/reports/qc/testinstance.py:57 qatrack/reports/qc/testinstance.py:122
@@ -284,7 +286,7 @@ msgstr "Test"
 #: qatrack/qa/models.py:2644 qatrack/qa/models.py:2869
 #: qatrack/qa/templates/qa/overview.html:132
 #: qatrack/qa/templates/qa/testlistinstance_list.html:101
-#: qatrack/qa/templates/qa/testlistinstance_review.html:60
+#: qatrack/qa/templates/qa/testlistinstance_review.html:66
 #: qatrack/reports/qc/assigned_qc.py:263
 #: qatrack/reports/templates/reports/qc/assigned_qc_details.html:26
 #: qatrack/reports/templates/reports/qc/assigned_qc_details.html:46
@@ -301,7 +303,7 @@ msgid "Test List"
 msgstr "Liste de tests"
 
 #: qatrack/attachments/admin.py:35 qatrack/attachments/models.py:98
-#: qatrack/qa/templates/qa/testlistinstance_review.html:56
+#: qatrack/qa/templates/qa/testlistinstance_review.html:62
 #: qatrack/reports/templates/reports/qc/assigned_qc_details.html:20
 #: qatrack/reports/templates/reports/qc/backup_forms.html:29
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:36
@@ -354,8 +356,8 @@ msgstr "Sans étiquette"
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:415
 #: qatrack/qa/templates/qa/testlistinstance_form.html:600
 #: qatrack/qa/templates/qa/testlistinstance_form.html:793
-#: qatrack/qa/templates/qa/testlistinstance_review.html:426
-#: qatrack/qa/templates/qa/testlistinstance_review.html:450
+#: qatrack/qa/templates/qa/testlistinstance_review.html:432
+#: qatrack/qa/templates/qa/testlistinstance_review.html:456
 #: qatrack/qa/views/forms.py:342 qatrack/reports/qc/testlistinstance.py:353
 #: qatrack/reports/service_log/details.py:162
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:213
@@ -381,8 +383,8 @@ msgstr "Pièce jointe"
 #: qatrack/qa/models.py:2056
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:283
 #: qatrack/qa/templates/qa/testlistinstance_form.html:521
-#: qatrack/qa/templates/qa/testlistinstance_review.html:274
-#: qatrack/qa/templates/qa/testlistinstance_review.html:468
+#: qatrack/qa/templates/qa/testlistinstance_review.html:280
+#: qatrack/qa/templates/qa/testlistinstance_review.html:474
 #: qatrack/reports/qc/testinstance.py:130
 #: qatrack/reports/qc/testinstance.py:197
 #: qatrack/reports/qc/testlistinstance.py:335
@@ -496,7 +498,7 @@ msgstr ""
 #: qatrack/qa/templates/qa/overview_by_due_date.html:127
 #: qatrack/qa/templates/qa/review_table_headers.html:3
 #: qatrack/qa/templates/qa/testlistinstance_list.html:102
-#: qatrack/qa/templates/qa/testlistinstance_review.html:52
+#: qatrack/qa/templates/qa/testlistinstance_review.html:58
 #: qatrack/qa/views/base.py:232 qatrack/qa/views/base.py:386
 #: qatrack/qa/views/review.py:380 qatrack/reports/faults/details.py:116
 #: qatrack/reports/faults/summary.py:152 qatrack/reports/filters.py:102
@@ -873,7 +875,7 @@ msgstr "Cliquer pour afficher les détails de ce type de défaillance"
 #: qatrack/qa/models.py:1540
 #: qatrack/qa/templates/qa/testlistinstance_form.html:147
 #: qatrack/qa/templates/qa/testlistinstance_form.html:779
-#: qatrack/qa/templates/qa/testlistinstance_review.html:230
+#: qatrack/qa/templates/qa/testlistinstance_review.html:236
 #: qatrack/qa/views/admin.py:114
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:83
 #: qatrack/templates/admin/qa/testpack/export.html:55
@@ -891,9 +893,9 @@ msgstr "Description"
 #: qatrack/faults/templates/faults/fault_type_description.html:8
 #: qatrack/faults/templates/faults/fault_type_details.html:52
 #: qatrack/qa/templates/qa/_testinstancestatus_select.html:6
-#: qatrack/qa/templates/qa/testlistinstance_review.html:292
-#: qatrack/qa/templates/qa/testlistinstance_review.html:377
-#: qatrack/qa/templates/qa/testlistinstance_review.html:485
+#: qatrack/qa/templates/qa/testlistinstance_review.html:298
+#: qatrack/qa/templates/qa/testlistinstance_review.html:383
+#: qatrack/qa/templates/qa/testlistinstance_review.html:491
 #: qatrack/templates/site_base.html:122
 msgid "No description available"
 msgstr "Aucune description disponible"
@@ -917,7 +919,7 @@ msgstr "Afficher les détails de %(fault)s"
 
 #: qatrack/faults/templates/faults/fault_actions.html:9
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:441
-#: qatrack/qa/templates/qa/testlistinstance_review.html:255
+#: qatrack/qa/templates/qa/testlistinstance_review.html:261
 #: qatrack/qa/views/review.py:283
 #: qatrack/service_log/templates/service_log/service_event_detail.html:397
 #: qatrack/service_log/templates/service_log/service_event_update.html:779
@@ -949,7 +951,7 @@ msgstr "Modifier les détails de %(fault)s"
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:438
 #: qatrack/qa/templates/qa/testlistinstance_form.html:13
 #: qatrack/qa/templates/qa/testlistinstance_form.html:441
-#: qatrack/qa/templates/qa/testlistinstance_review.html:536
+#: qatrack/qa/templates/qa/testlistinstance_review.html:542
 #: qatrack/service_log/templates/service_log/service_event_detail.html:94
 #: qatrack/service_log/templates/service_log/service_event_detail.html:524
 #: qatrack/service_log/templates/service_log/table_context/table_context_se_actions.html:10
@@ -981,7 +983,7 @@ msgstr ""
 #: qatrack/parts/templates/parts/part_update.html:200
 #: qatrack/parts/templates/parts/part_update.html:273
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:433
-#: qatrack/qa/templates/qa/testlistinstance_review.html:555
+#: qatrack/qa/templates/qa/testlistinstance_review.html:561
 #: qatrack/service_log/templates/service_log/service_event_delete.html:82
 #: qatrack/service_log/templates/service_log/service_event_update.html:331
 #: qatrack/service_log/templates/service_log/service_event_update.html:413
@@ -1009,7 +1011,7 @@ msgstr "Reconnaître cette défaillance"
 #: qatrack/qa/templates/qa/testlistinstance_form.html:701
 #: qatrack/qa/templates/qa/testlistinstance_form.html:745
 #: qatrack/qa/templates/qa/testlistinstance_form.html:808
-#: qatrack/qa/templates/qa/testlistinstance_review.html:598
+#: qatrack/qa/templates/qa/testlistinstance_review.html:604
 #: qatrack/qa/templates/qa/unittestcollection_backup.html:42
 #: qatrack/reports/templates/reports/faults/details.html:86
 #: qatrack/reports/templates/reports/faults/details.html:95
@@ -1024,7 +1026,7 @@ msgstr "Commentaires"
 #: qatrack/faults/templates/faults/fault_form.html:153
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:503
 #: qatrack/qa/templates/qa/testlistinstance_form.html:722
-#: qatrack/qa/templates/qa/testlistinstance_review.html:618
+#: qatrack/qa/templates/qa/testlistinstance_review.html:624
 #: qatrack/service_log/templates/service_log/service_event_detail.html:458
 #: qatrack/service_log/templates/service_log/service_event_update.html:480
 msgid "Add comment"
@@ -1034,7 +1036,7 @@ msgstr "Ajouter un commentaire"
 #: qatrack/faults/templates/faults/fault_form.html:157
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:508
 #: qatrack/qa/templates/qa/testlistinstance_form.html:727
-#: qatrack/qa/templates/qa/testlistinstance_review.html:622
+#: qatrack/qa/templates/qa/testlistinstance_review.html:628
 #: qatrack/service_log/templates/service_log/service_event_detail.html:462
 #: qatrack/service_log/templates/service_log/service_event_update.html:485
 msgid "Post Comment"
@@ -1351,8 +1353,8 @@ msgstr "Étiquettes"
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:292
 #: qatrack/qa/templates/qa/testlistinstance_form.html:520
 #: qatrack/qa/templates/qa/testlistinstance_list.html:104
-#: qatrack/qa/templates/qa/testlistinstance_review.html:285
-#: qatrack/qa/templates/qa/testlistinstance_review.html:478
+#: qatrack/qa/templates/qa/testlistinstance_review.html:291
+#: qatrack/qa/templates/qa/testlistinstance_review.html:484
 #: qatrack/reports/service_log/details.py:147
 #: qatrack/reports/service_log/summary.py:170
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:138
@@ -2943,8 +2945,8 @@ msgstr "Valeur de référence"
 #: qatrack/qa/admin.py:305 qatrack/qa/templates/qa/review_table_headers.html:10
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:284
 #: qatrack/qa/templates/qa/testlistinstance_form.html:527
-#: qatrack/qa/templates/qa/testlistinstance_review.html:276
-#: qatrack/qa/templates/qa/testlistinstance_review.html:547
+#: qatrack/qa/templates/qa/testlistinstance_review.html:282
+#: qatrack/qa/templates/qa/testlistinstance_review.html:553
 #: qatrack/qa/templates/qa/unittestcollection_actions.html:14
 #: qatrack/templates/admin/change_form.html:65
 #: qatrack/templates/explorer/base.html:64
@@ -3912,8 +3914,8 @@ msgstr "Entrer un nom court pour cette référence"
 #: qatrack/qa/templates/qa/history.html:9
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:281
 #: qatrack/qa/templates/qa/testlistinstance_form.html:518
-#: qatrack/qa/templates/qa/testlistinstance_review.html:269
-#: qatrack/qa/templates/qa/testlistinstance_review.html:463
+#: qatrack/qa/templates/qa/testlistinstance_review.html:275
+#: qatrack/qa/templates/qa/testlistinstance_review.html:469
 #: qatrack/qa/templates/qa/unittestcollection_backup.html:48
 #: qatrack/reports/qc/testinstance.py:125
 #: qatrack/reports/qc/testlistinstance.py:343
@@ -3930,8 +3932,8 @@ msgstr "Entrer une valeur de référence pour ce test."
 #: qatrack/qa/models.py:653 qatrack/qa/models.py:2059
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:282
 #: qatrack/qa/templates/qa/testlistinstance_form.html:524
-#: qatrack/qa/templates/qa/testlistinstance_review.html:270
-#: qatrack/qa/templates/qa/testlistinstance_review.html:464
+#: qatrack/qa/templates/qa/testlistinstance_review.html:276
+#: qatrack/qa/templates/qa/testlistinstance_review.html:470
 #: qatrack/qa/templates/qa/unittestcollection_backup.html:50
 #: qatrack/reports/qc/assigned_qc.py:267 qatrack/reports/qc/testinstance.py:126
 #: qatrack/reports/qc/testinstance.py:194
@@ -4665,14 +4667,14 @@ msgstr "Ajouter un commentaire à ce test"
 
 #: qatrack/qa/models.py:2067 qatrack/qa/models.py:2398
 #: qatrack/qa/models.py:2658
-#: qatrack/qa/templates/qa/testlistinstance_review.html:82
+#: qatrack/qa/templates/qa/testlistinstance_review.html:88
 #: qatrack/reports/qc/testlistinstance.py:316
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:50
 msgid "Work Started"
 msgstr "Travaux débutés"
 
 #: qatrack/qa/models.py:2070 qatrack/qa/models.py:2399
-#: qatrack/qa/templates/qa/testlistinstance_review.html:85
+#: qatrack/qa/templates/qa/testlistinstance_review.html:91
 #: qatrack/qa/views/base.py:389 qatrack/qa/views/forms.py:333
 #: qatrack/reports/filters.py:90 qatrack/reports/filters.py:144
 #: qatrack/reports/filters.py:381 qatrack/reports/qc/testinstance.py:121
@@ -4726,8 +4728,8 @@ msgstr "La session était-elle à échéance lorsqu'elle a été effectuée"
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:84
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:98
 #: qatrack/qa/templates/qa/testlistinstance_form.html:877
-#: qatrack/qa/templates/qa/testlistinstance_review.html:89
-#: qatrack/qa/templates/qa/testlistinstance_review.html:103
+#: qatrack/qa/templates/qa/testlistinstance_review.html:95
+#: qatrack/qa/templates/qa/testlistinstance_review.html:109
 #: qatrack/qa/templates/qa/testlistinstance_review_status.html:5
 #: qatrack/reports/qc/testlistinstance.py:319
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:56
@@ -4757,7 +4759,7 @@ msgstr ""
 "cette instance de liste de tests"
 
 #: qatrack/qa/models.py:2427
-#: qatrack/qa/templates/qa/testlistinstance_review.html:68
+#: qatrack/qa/templates/qa/testlistinstance_review.html:74
 msgid "User Key"
 msgstr "Clé client"
 
@@ -5181,13 +5183,13 @@ msgstr "Autres groupes"
 
 #: qatrack/qa/templates/qa/history.html:9
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:319
-#: qatrack/qa/templates/qa/testlistinstance_review.html:331
+#: qatrack/qa/templates/qa/testlistinstance_review.html:337
 msgid "Diff from ref"
 msgstr "Diff avec Réf"
 
 #: qatrack/qa/templates/qa/history.html:9
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:319
-#: qatrack/qa/templates/qa/testlistinstance_review.html:331
+#: qatrack/qa/templates/qa/testlistinstance_review.html:337
 msgid "No ref/tol set"
 msgstr "Aucun ensemble de réf / tol"
 
@@ -5366,7 +5368,7 @@ msgid "User Key :"
 msgstr "Clé client :"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:69
-#: qatrack/qa/templates/qa/testlistinstance_review.html:73
+#: qatrack/qa/templates/qa/testlistinstance_review.html:79
 msgid "Not set"
 msgstr "Non défini"
 
@@ -5383,27 +5385,33 @@ msgid "Duration :"
 msgstr "Durée :"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:102
+#: qatrack/qa/templates/qa/testlistinstance_review.html:113
 msgid "Previous Due Date:"
 msgstr "Date d'échéance précédente :"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:105
+#: qatrack/qa/templates/qa/testlistinstance_review.html:116
 msgid "Due date when this test list was performed"
 msgstr "La date d'échéance lorsque cette liste de tests a été effectuée"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:107
+#: qatrack/qa/templates/qa/testlistinstance_review.html:118
 #: qatrack/service_log/templates/service_log/service_event_detail.html:148
 msgid "No due date set"
 msgstr "Aucune date d'échéance définie"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:111
+#: qatrack/qa/templates/qa/testlistinstance_review.html:122
 msgid "Scheduled:"
 msgstr "Planifié:"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:114
+#: qatrack/qa/templates/qa/testlistinstance_review.html:125
 msgid "This instance is included when calculating due dates"
 msgstr "Cette instance est considérée lors du calcul des dates d'échéance"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:116
+#: qatrack/qa/templates/qa/testlistinstance_review.html:127
 msgid "This instance is not considered when calculating due dates"
 msgstr ""
 "Cette instance n'est pas considérée lors du calcul des dates d'échéance"
@@ -5428,7 +5436,7 @@ msgid "Create new service event initiated by this list"
 msgstr "Créer un nouvel événement de service initié par cette liste"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:153
-#: qatrack/qa/templates/qa/testlistinstance_review.html:154
+#: qatrack/qa/templates/qa/testlistinstance_review.html:160
 msgid "Initiate Service Event"
 msgstr "Initier un événement de service"
 
@@ -5446,8 +5454,8 @@ msgstr "Événements de service initiés:"
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:203
 #: qatrack/qa/templates/qa/testlistinstance_form.html:351
 #: qatrack/qa/templates/qa/testlistinstance_form.html:381
-#: qatrack/qa/templates/qa/testlistinstance_review.html:174
-#: qatrack/qa/templates/qa/testlistinstance_review.html:204
+#: qatrack/qa/templates/qa/testlistinstance_review.html:180
+#: qatrack/qa/templates/qa/testlistinstance_review.html:210
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:101
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:113
 msgid "View service event"
@@ -5457,8 +5465,8 @@ msgstr "Afficher l'événement de service"
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:209
 #: qatrack/qa/templates/qa/testlistinstance_form.html:356
 #: qatrack/qa/templates/qa/testlistinstance_form.html:386
-#: qatrack/qa/templates/qa/testlistinstance_review.html:180
-#: qatrack/qa/templates/qa/testlistinstance_review.html:210
+#: qatrack/qa/templates/qa/testlistinstance_review.html:186
+#: qatrack/qa/templates/qa/testlistinstance_review.html:216
 msgid "New tab: view service event"
 msgstr "Nouvel onglet : afficher l'événement de service"
 
@@ -5473,20 +5481,20 @@ msgstr "Description:"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:286
 #: qatrack/qa/templates/qa/testlistinstance_form.html:529
-#: qatrack/qa/templates/qa/testlistinstance_review.html:278
-#: qatrack/qa/templates/qa/testlistinstance_review.html:471
+#: qatrack/qa/templates/qa/testlistinstance_review.html:284
+#: qatrack/qa/templates/qa/testlistinstance_review.html:477
 #, python-format
 msgid "Click to view this test list instance performed at %(d)s"
 msgstr ""
 "Cliquer pour afficher cette instance de liste de test effectuée le %(d)s"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:334
-#: qatrack/qa/templates/qa/testlistinstance_review.html:346
+#: qatrack/qa/templates/qa/testlistinstance_review.html:352
 msgid "Click to show full results"
 msgstr "Cliquer pour afficher les résultats complets"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:336
-#: qatrack/qa/templates/qa/testlistinstance_review.html:348
+#: qatrack/qa/templates/qa/testlistinstance_review.html:354
 msgid "Click to show full text"
 msgstr "Cliquer pour afficher le texte complet"
 
@@ -5499,17 +5507,17 @@ msgstr ""
 "cette défaillance"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:436
-#: qatrack/qa/templates/qa/testlistinstance_review.html:525
+#: qatrack/qa/templates/qa/testlistinstance_review.html:531
 msgid "Continue this list"
 msgstr "Continuer cette liste"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:436
-#: qatrack/qa/templates/qa/testlistinstance_review.html:529
+#: qatrack/qa/templates/qa/testlistinstance_review.html:535
 msgid "Continue"
 msgstr "Continuer"
 
 #: qatrack/qa/templates/qa/testlistinstance_detail.html:438
-#: qatrack/qa/templates/qa/testlistinstance_review.html:533
+#: qatrack/qa/templates/qa/testlistinstance_review.html:539
 msgid "Edit this list"
 msgstr "Modifier cette liste"
 
@@ -5851,73 +5859,97 @@ msgstr "CSV"
 msgid "Excel"
 msgstr "Excel"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:65
+#: qatrack/qa/templates/qa/testlistinstance_review.html:16
+#, python-format
+msgid ""
+"\n"
+"%(dt)s %(test_list_name)s Details\n"
+msgstr ""
+"\n"
+"Détails de %(test_list_name)s du %(dt)s\n"
+
+#: qatrack/qa/templates/qa/testlistinstance_review.html:48
+#, python-format
+msgid ""
+"\n"
+"              %(dt)s %(test_list_name)s Details\n"
+"              "
+msgstr ""
+"\n"
+"              Détails de %(test_list_name)s du %(dt)s\n"
+"              "
+
+#: qatrack/qa/templates/qa/testlistinstance_review.html:71
 #: qatrack/reports/qc/testinstance.py:129
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:40
 #: qatrack/reports/tests/test_qc.py:342
 msgid "Performed By"
 msgstr "Effectué par"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:98
+#: qatrack/qa/templates/qa/testlistinstance_review.html:104
 #: qatrack/reports/qc/testlistinstance.py:318
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:62
 #: qatrack/templates/explorer/querylog_list.html:26
 msgid "Duration"
 msgstr "Durée"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:125
+#: qatrack/qa/templates/qa/testlistinstance_review.html:131
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:71
 msgid "Last Modification"
 msgstr "Dernière modification"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:128
+#: qatrack/qa/templates/qa/testlistinstance_review.html:134
 msgid "Last Review"
 msgstr "Dernière révision"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:159
+#: qatrack/qa/templates/qa/testlistinstance_review.html:153
+msgid "Create new service event initiated by this test list"
+msgstr "Créer un nouvel événement de service initié par cette liste"
+
+#: qatrack/qa/templates/qa/testlistinstance_review.html:165
 msgid "New tab: Create new service event initiated by this test list"
 msgstr ""
 "Nouvel onglet : créer un nouvel événement de service initié par cette liste "
 "de tests"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:165
+#: qatrack/qa/templates/qa/testlistinstance_review.html:171
 msgid "Service events initiated"
 msgstr "Événements de service initiés"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:195
+#: qatrack/qa/templates/qa/testlistinstance_review.html:201
 msgid "RTS QC for Service Events"
 msgstr "CQ de RES pour les événements de service"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:258
+#: qatrack/qa/templates/qa/testlistinstance_review.html:264
 msgid "From cycle"
 msgstr "Du cycle"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:272
-#: qatrack/qa/templates/qa/testlistinstance_review.html:466
+#: qatrack/qa/templates/qa/testlistinstance_review.html:278
+#: qatrack/qa/templates/qa/testlistinstance_review.html:472
 #: qatrack/reports/templates/reports/qc/testlistinstance_details.html:135
 #: qatrack/reports/tests/test_qc.py:242
 msgid "Difference"
 msgstr "Différence"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:299
-#: qatrack/qa/templates/qa/testlistinstance_review.html:492
+#: qatrack/qa/templates/qa/testlistinstance_review.html:305
+#: qatrack/qa/templates/qa/testlistinstance_review.html:498
 msgid "Selected"
 msgstr "Sélectionné"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:506
-#: qatrack/qa/templates/qa/testlistinstance_review.html:517
+#: qatrack/qa/templates/qa/testlistinstance_review.html:512
+#: qatrack/qa/templates/qa/testlistinstance_review.html:523
 msgid "Click to update the test instance statuses"
 msgstr "Cliquer pour mettre à jour les statuts d'instance de test"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:509
+#: qatrack/qa/templates/qa/testlistinstance_review.html:515
 msgid "Update Statuses"
 msgstr "Mettre à jour les statuts"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:520
+#: qatrack/qa/templates/qa/testlistinstance_review.html:526
 msgid "Update Test Statuses"
 msgstr "Mettre à jour les statuts de test"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:542
+#: qatrack/qa/templates/qa/testlistinstance_review.html:548
 #, python-format
 msgid ""
 "\n"
@@ -5930,7 +5962,7 @@ msgstr ""
 "%(test_list_name)s sur %(unit_name)s\"\n"
 "                        "
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:552
+#: qatrack/qa/templates/qa/testlistinstance_review.html:558
 msgid ""
 "This will redirect you to the admin site where you can permanently delete "
 "this QC session"
@@ -5938,7 +5970,7 @@ msgstr ""
 "Cela vous dirigera vers le site d'administration où vous pouvez supprimer "
 "définitivement cette session CQ"
 
-#: qatrack/qa/templates/qa/testlistinstance_review.html:569
+#: qatrack/qa/templates/qa/testlistinstance_review.html:575
 msgid "Images for "
 msgstr "Images pour "
 
