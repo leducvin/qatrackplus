@@ -149,6 +149,7 @@ class CostInputField(forms.CharField):
 class PartForm(BetterModelForm):
 
     cost = CostInputField(
+        label=_l("Cost"),
         help_text=p_models.Part._meta.get_field('cost').help_text,
         required=False,
     )

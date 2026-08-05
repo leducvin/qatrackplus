@@ -453,7 +453,7 @@ class TestListInstances(BaseListableView):
         return 'fa-question-circle'
 
     def get_page_title(self):
-        return "All Test Collections"
+        return _("All Test Collections")
 
     def get_fields(self, request=None):
 

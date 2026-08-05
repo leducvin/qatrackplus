@@ -1164,7 +1164,7 @@ class ReturnToServiceQABaseList(BaseListableView):
         return 'fa-pencil-square-o'
 
     def get_page_title(self, f=None):
-        return 'All Return To Service QC'
+        return _('All Return To Service QC')
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
@@ -1235,7 +1235,7 @@ class ReturnToServiceQABaseList(BaseListableView):
 class ReturnToServiceQAIncompleteList(ReturnToServiceQABaseList):
 
     def get_page_title(self):
-        return "Return to Service QC - Incomplete"
+        return _("Return to Service QC - Incomplete")
 
     def get_queryset(self):
         return super().get_queryset().filter(test_list_instance=None)
@@ -1247,7 +1247,7 @@ class ReturnToServiceQAIncompleteList(ReturnToServiceQABaseList):
 class ReturnToServiceQAUnreviewedList(ReturnToServiceQABaseList):
 
     def get_page_title(self):
-        return "Return to Service QC - Unreviewed"
+        return _("Return to Service QC - Unreviewed")
 
     def get_queryset(self):
         return super().get_queryset().filter(
@@ -1268,7 +1268,7 @@ class ReturnToServiceQAForEventList(ReturnToServiceQABaseList):
             format_datetime(se.datetime_service),
             qa_tags.service_status_label(se.service_status),
         )
-        return mark_safe("Return to Service QC - Service Event %d: %s" % (se.pk, description))
+        return mark_safe(_("Return to Service QC - Service Event %d: %s") % (se.pk, description))
 
     def get_queryset(self):
         get_object_or_404(sl_models.ServiceEvent, pk=self.kwargs['se_pk'])
@@ -1295,7 +1295,7 @@ class TLISelect(UTCInstances):
     def get_page_title(self):
         try:
             utc = qa_models.UnitTestCollection.objects.get(pk=self.kwargs["pk"])
-            return "Select a %s instance" % utc.name
+            return _("Select a %(utcname)s instance") % {"utcname": utc.name}
         except qa_models.UnitTestCollection.DoesNotExist:
             raise Http404
         except KeyError:
@@ -1405,7 +1405,7 @@ class ServiceEventDownTimesList(ServiceEventsBaseList):
         return self.fields
 
     def get_page_title(self, f=None):
-        return _l('Filter Service Events and Up Time Summary')
+        return _('Filter Service Events and Up Time Summary')
 
     def duration_lost_time(self, se):
         duration = se.duration_lost_time
